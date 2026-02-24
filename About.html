@@ -1,0 +1,86 @@
+<!DOCTYPE html>​
+<html>​
+
+<head>​
+    <link rel="stylesheet" href="Stile.css">
+</head>​
+
+<body>​
+<h1>
+    <a href="PaginaDH.html" class="title-link">
+    CYBERSTRIKES<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+    </a>
+</h1>
+
+<div class="menu-container">
+    <a href="DiveIn.html" class="box">DIVE IN</a>
+    
+    <a href="Dataset.html" class="box">DATASET</a>
+    
+    <a href="PaginaDH.html" class="box">HOME</a>
+</div>
+
+<div class="section-title">
+    <h2>[THE_MAKING_OF_CYBERSTRIKES]</h2>
+</div>
+
+<div class="top">
+    <p class="typewriter"> <span id="evidenzia">Cybestrikes</span> is the project I made for my university exam of Digital Humanities for the 2025/2026 course. <br>
+        As a huge fan of both technology and videogames, I believed this dataset to be the perfect choice. <br>
+        The graphics I chose should also underline that point very clearly. <br><br>
+        To create everything that my mind wanted to realize I had to use AI tools - Gemini, Google's chatbot -  since my coding skills were lacking. <br>
+        AI assistance is <span id="evidenzia"> exclusively technological</span>, everything else is strictly human made. <br><br>
+        All of the data analysis and the corresponding graphical visualizations were made on <span id="evidenzia"> R studio</span>. <br>
+        The artists and creators of the icon used will be credited right after this text section. <br> </p>
+</div>
+
+<div class="icon-links-container">
+    <a href="https://www.flaticon.com/free-icons/alien" class="icon-link">
+        <img src="Icons/alien-space-character-of-pixels-for-a-game.png" alt="Icona 1" class="pixel-nav-icon">
+        <span class="icon-label">Freepik</span>
+    </a>
+    
+    <a href="https://www.flaticon.com/free-icons/pixel" class="icon-link">
+        <img src="Icons/money-bag (2).png" alt="Icona 2" class="pixel-nav-icon">
+        <span class="icon-label">Dooder</span>
+    </a>
+    
+    <a href="https://www.flaticon.com/free-icons/pixels" class="icon-link">
+        <img src="Icons/clock.png" alt="Icona 3" class="pixel-nav-icon">
+        <span class="icon-label">cubydesign</span>
+    </a>
+    
+    <a href="https://www.flaticon.com/free-icons/pixel" class="icon-link">
+        <img src="Icons/person.png" alt="Icona 4" class="pixel-nav-icon">
+        <span class="icon-label">menon</span>
+    </a>
+    
+    <a href="https://www.flaticon.com/free-icons/pixel" class="icon-link">
+        <img src="Icons/up-arrow.png" alt="Icona 5" class="pixel-nav-icon">
+        <span class="icon-label">Taufik Ramadhan</span>
+    </a>
+</div>
+
+<script>
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+        
+            if(this.hostname === window.location.hostname && this.getAttribute('href').charAt(0) !== '#') {
+                e.preventDefault();
+                const destinazione = this.href;
+
+                
+                document.body.classList.add('system-failure');
+
+                
+                setTimeout(() => {
+                    window.location.href = destinazione;
+                }, 800);
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Stile.css">
+</head>
+
+<body>
+<h1>
+    <a href="PaginaDH.html" class="title-link">
+    CYBERSTRIKES<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+    </a>
+</h1>
+
+<div class="menu-container">
+    <a href="PaginaDH.html" class="box">HOME</a>
+    
+    <a href="Dataset.html" class="box">DATASET</a>
+    
+    <a href="About.html" class="box">ABOUT</a>
+</div>
+
+<div class="top">
+    <p class="typewriter"> It is now time to begin the data visualization. To start, you can explore the <span id="evidenzia"> slideshow section </span> right under this text part. <br>
+    You will find every variable of the dataset graphically shown, in order to get a quick general glimpse of it. </p>
+</div>
+
+<div class="carousel-container">
+    
+    <button class="nav-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+
+    <div class="slide active-slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - Country.png" alt="COUNTRY">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">01 - COUNTRY</h2>
+                <p>
+                    <br> Here are shown the countries in which the attacks took place and how many of them happened. <br> 
+                    As the graphs is showing, there is not a single country receiving more attacks than the others, so we can exclude the possibility of a specifically targeted country.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - Year.png" alt="YEAR">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">02 - YEAR</h2>
+                <p>
+                    <br> Quite simple, here are catalogued all of the reported attacks that happened in a specific year. Everything is balanced, except for a notable reduction in 2019 that quickly rose back in 2020.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - Method.png" alt="METHOD">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">03 - METHOD</h2>
+                <p>
+                    <br> The <span class="interactive-word"> DDoS <span class="popup"> Distributed Denial of Service: an attempt to interfere with the normal operations
+                         of an online service by overwhelming it with repeated automated requests for data from multiple sources. </span></span>, <span class="interactive-word"> Phishing <span class="popup">
+                         The practice of tricking Internet users into revealing personal or confidential information which can then be used illicitly. </span></span>, and <span class="interactive-word"> 
+                         SQL Injection <span class="popup"> A code injection technique used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution. 
+                         </span></span> are clearly the favorites. <br> 
+                         <span class="interactive-word"> Ransomware <span class="popup"> Malware that requires the victim to pay a ransom to access encrypted files. </span></span>, 
+                         <span class="interactive-word"> Malware <span class="popup"> Malicious software designed to interfere with a computer's normal functioning. </span></span>
+                          and <span class="interactive-word"> Man-in-the-Middle <span class="popup"> Cyberattack where the attacker secretly relays and possibly alters the communications between 
+                         two parties who believe that they are directly communicating with each other, where in actuality the attacker has inserted themselves between the two user parties. </span></span> 
+                         are still "valid" and widely used alternatives.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - TarIndustry.png" alt="INDUSTRY">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">04 - TARGET INDUSTRY</h2>
+                <p>
+                    <br> It does not surprise that IT is the most attacked industry sector, as they manage and work within the same ambient in which the cyberattacks are born and made.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - Financial.png" alt="FINANCIAL">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">05 - FINANCIAL LOSS</h2>
+                <p>
+                    <br> Here we can graphically see the economical impact of every attack reported. As it is shown, cyberattacks' danger can vary, but they still are, on average, able to wreak 
+                    significant economical havoc. <br> The general mean accounts for 50.50 millions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - AffUsers.png" alt="USERS">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">06 - AFFECTED USERS</h2>
+                <p>
+                    <br> Even though the graph is not really readable, what we can deduce is that, just like the financial losses, cyberattacks' impact and danger can vary. <br> The general mean is 504684 users affected.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - Source.png" alt="SOURCE">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">07 - SOURCE</h2>
+                <p>
+                    <br> This graphs is reporting the source of each reported attack. What we see, and I believe to be quite interesting, is the fact that the main origin of these attacks is, at 
+                    least in this dataset, national. Nation-states are mandating silent and stealthy cyberattacks in order to reinforce their own national interests, something that might resemble the operational 
+                    tactics of Cold War.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - VulnUsed.png" alt="VULNERABILITY">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">08 - VULNERABILITY USED</h2>
+                <p>
+                    <br> Here we can observe what kind of security vunlerability was used by the attackers to carry out their attack. <span class="interactive-word"> Zero-day <span class="popup"> Vulnerability 
+                    or security hole in a computer system unknown to its developers or anyone capable of mitigating it. </span></span> is, reasonably, the most exploited. Weak Passwords hold a huge portion of 
+                    the count, underlining the importance of keeping safe something so often neglected.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - DefMech.png" alt="DEFENSE">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">09 - DEFENSE MECHANISM</h2>
+                <p>
+                    <br> The defense mechanism used are all quite balanced, but every reported attack only accounted for one single defense mechanism. This is quite improbable as, usually, multiple defense mechanism
+                    are set up and used at the same time, creating a multi-layered defense system.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide-content">
+            <div class="chart-box">
+                <img src="Graphs/Rplot - ResTime.png" alt="RESOLUTION">
+            </div>
+            <div class="text-box">
+                <h2 class="slide-title">10 - RESOLUTION TIME</h2>
+                <p>
+                    <br> Resolution time is one of the most variable value that we've seen in the whole dataset. Values are not equally balanced, as there are many highs and lows. <br> The general mean is 36.47 hours.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="nav-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+
+</div>
+
+<div class="top"> 
+    <p class="typewriter"> With all the information gathered from the general overview, we can move onto a more specific analysis. <br> It is now time to explore how different industry sectors are attacked. </p>
+</div>
+
+<div class="section-title">
+    <h2>[TARGET_INDUSTRY_ANALYSIS]</h2>
+</div>
+
+<div class="static-gallery">
+    <div class="gallery-item">
+        <div class="image-frame">
+            <img src="Graphs/Rplot - TarIndustry2.png" alt="Ind1">
+        </div>
+        <div class="img-caption">TAR_INDUSTRY > ATTACK_COUNT</div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="image-frame">
+            <img src="Graphs/Rplot - IndFinancialShort.png" alt="Ind2">
+        </div>
+        <div class="img-caption">TAR_INDUSTRY > FINANCIAL_LOSS</div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="image-frame">
+            <img src="Graphs/Rplot - IndUsersShort.png" alt="Ind3">
+        </div>
+        <div class="img-caption">TAR_INDUSTRY > USERS_AFFECTED</div>
+    </div>
+</div>
+
+<div class="top">
+    <p class="typewriter"> What we see is that, in almost 10 years, every industry sector here reported received a considerable amount of attacks. IT - Information technology - leads the leaderboard. <br>
+    Financial losses also follow the same statistical trend, except for Government. <br> While being the lesser attacked sector, togheter with Telecommunication, it suffered 21 billions in financial losses, <br>
+    a similar amount unfortunately reached by more attacked sectors. <br> On the other hand, Users Affected exactly mirrors the first graph. <br> <br>
+    Let's now dig a little deeper. <br> <br><br><br></p>
+</div>
+
+<div class="static-gallery">
+    <div class="gallery-item">
+        <div class="image-frame">
+            <img src="Graphs/Rplot - ItSource.png" alt="Ind1">
+        </div>
+        <div class="img-caption">IND/IT > SOURCE</div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="image-frame">
+            <img src="Graphs/Rplot - EducationSource.png" alt="Ind2">
+        </div>
+        <div class="img-caption">IND/EDUCATION > SOURCE</div>
+    </div>
+
+    <div class="gallery-item">
+        <div class="image-frame">
+            <img src="Graphs/Rplot - GovernmentSource.png" alt="Ind3">
+        </div>
+        <div class="img-caption">IND/GOVERNMENT > SOURCE</div>
+    </div>
+
+</div>
+
+<div class="minititle">
+    <h3>IT</h3>
+</div>
+
+<div class="top">
+    <p class="typewriter"> IT mostly received its attacks from unknown sources, why is that? We need to consider the <span id="evidenzia"> nature of the industry</span>. <br>
+        Being it highly technological and, at the same time, highly remunerative, it is the ideal target for cyberattacks. <br>
+        With this said, it is reasonable to think that the higher degree of technology quality used and developed by these companies also applies to their security levels. <br> 
+        Higher security levels might require better skilled cyber attackers, that are more capable of hiding themselves and not being caught. <br>
+        At the same time, we might also try to explain the higher amount of "unknowns" taking into account the chance of companies sabotaging each others. <br>
+        If what we have just said is true, it is not impossible for these same companies to mandate organized attacks against their own rivals. <br>
+        They have the tools, they might also have the will to act. <br><br>
+        Healthcare follows the same statistical trend.
+</div>
+
+<div class="minititle">
+    <h3>EDUCATION</h3>
+</div>
+
+<div class="top"> 
+    <p class="typewriter"> What happens in the field of Education is different. <br>
+        Nation-states and insiders are the main sources of attack by far. Unknowns and hacker-groups are clearly behind. <br>
+        If we apply the same logic used before, we need to explore the nature of the industry. Education is, in fact, substantially different. It is, mainly, a <span id="evidenzia"> public field</span>.<br>
+        Therefore it does not carry extra-national interests but, because of its nature, it accounts for a vital part of a Nation. <br>
+        Attacking these kind of fields can have tragic impacts on citizens, governments and a Nation as a whole. Hence, it is clear why Nation-states attacks are so high. <br>
+        In a world where competition between States never ceased, new forms of war are emerging and cyberattacks are one of them. <br>
+        The higher amount of insider attacks might be explainable by the fact that, usually, workers in this field are underpaid. If we add on top of this the general access to <br>
+        digital structures that is usually given to these workers we have a easily corruptible operative insider. <br><br>
+        Banking and Retail follow the same statistical trend.
+    </p>
+</div>
+
+<div class="minititle">
+    <h3>GOVERNMENT</h3>
+</div>
+
+<div class="top"> 
+    <p class="typewriter"> Government is the most balanced of the fields. <br>
+        It received attacks from everywhere, nothing specific. It is interesting to note that even the Nation-states attacks are not extremely high. <br>
+        This might probably be due to the fact that is clearly harder, and way more dangerous, attacking a government backed digital structure. <br>
+        An attack against, let's say, the website of a university does not constitute an act of war (as for now). Can we say the same for an attack led directly agaisnt government institutions? <br>
+        It is way better for rival Nations to organize swarms of attacks against everything that surrounds governments, but not institutions themselves. <br>
+        Cyberattacks are used exactly to avoid setting off a war while, at the same time, aiming at generating the same disruptive effects. <br><br>
+        Telecommunication follows the same statistical trend.
+    </p>
+</div>
+
+<div class="minititle">
+    <h4>--- CONCLUSIONS ---</h4>
+</div>
+
+<div class="top"> 
+    <p class="typewriter"> We have explored how these different industries have been attacked. <br>
+        What is crucial is to consider the fact that, nowdays, everyone can and probably will be attacked. <br>
+        This underlines the importance of knowing what are the ways of defending oneself. <br>
+        Because it is not a matter of if, but when. <br><br>
+        Catchphrase done, we'll now conclude with a more enjoyable section.
+    </p>
+</div>
+
+<div class="section-title">
+    <h2>[ATTACK_METHOD_LEADERBOARD]</h2>
+</div>
+<div class="top"> 
+    <p class="typewriter"> This text section will be followed by a graphical representation of some categories related to every cyberattack method. <br>
+        Almost every measure is calculted using <span id="evidenzia"> relative values</span>, meaning that each variable took into consideration will be divided by the times each attack occured. <br>
+        The only exception is the attack count that, by nature, has to be calculted using absolute values. <br><br>
+        The section will end with a brief discussion on the results given by the graphs and a leaderboard. <br>
+        The leaderboard results are calculted in this way: 3 points for each first place, 2 points for each second place and 1 point for each third place. <br>
+        <span id="evidenzia">Each icon can be clicked </span>in order to be redirected either to the text or to the graph. They work in both ways. <br><br>
+        Let's see who wants to be the very best, like no cyberattack ever was. <br><br>
+    </p>
+</div>
+
+<div class="charts-section">
+    
+    <div class="row-top">
+        
+        <div class="chart-card" id="chart-users">
+            <div class="card-body">
+                <div class="chart-img-container">
+                    <img src="Graphs/Rplot - MethAffUsers.png" alt="Users Graph"> 
+                </div>
+                <div class="icon-container">
+                    <div class="icon-text">
+                        <span class="sys-value">01 - Man-in-the-Middle <br> 02 - SQL Injection <br> 03 - Malware </span>
+                    </div>
+                    <a href="#expl-users">
+                        <img src="Icons/person.png" class="pixel-icon" alt="Person Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="card-label">>> AVG_AFFECTED_USERS</div>
+        </div>
+
+        <div class="chart-card" id="chart-money">
+            <div class="card-body">
+                <div class="chart-img-container">
+                    <img src="Graphs/Rplot - MethAvgLoss.png" alt="Financial Graph">
+                </div>
+                <div class="icon-container">
+                    <div class="icon-text">
+                        <span class="sys-value">01 - DDoS <br> 02 - Man-in-the-Middle <br> 03 - Phishing </span>
+                    </div>
+                    <a href="#expl-money">
+                        <img src="Icons/money-bag (2).png" class="pixel-icon" alt="Money Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="card-label">>> AVG_FINANCIAL_LOSS</div>
+        </div>
+
+        <div class="chart-card" id="chart-time">
+            <div class="card-body">
+                <div class="chart-img-container">
+                    <img src="Graphs/Rplot - MethAvgResHours.png" alt="Time Graph">
+                </div>
+                <div class="icon-container">
+                    <div class="icon-text">
+                        <span class="sys-value">01 - Malware <br> 02 - SQL Injection <br> 03 - Man-in-the-Middle </span>
+                    </div>
+                    <a href="#expl-time">
+                        <img src="Icons/clock.png" class="pixel-icon" alt="Time Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="card-label">>> AVG_RESOLUTION_HOURS</div>
+        </div>
+
+    </div>
+
+    <div class="row-bottom">
+        
+        <div class="chart-card" id="chart-count">
+            <div class="card-body">
+                <div class="chart-img-container">
+                    <img src="Graphs/Rplot - MethAttackCount.png" alt="Attack Count Graph">
+                </div>
+                <div class="icon-container">
+                    <div class="icon-text">
+                    <span class="sys-value">01 - DDoS <br> 02 - Phishing <br> 03 - SQL Injection </span>
+                    </div>
+                    <a href="#expl-count">
+                        <img src="Icons/alien-space-character-of-pixels-for-a-game.png" class="pixel-icon" alt="Alien Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="card-label">>> ATTACK_COUNT</div>
+        </div>
+
+        <div class="chart-card" id="chart-growth">
+            <div class="card-body">
+                <div class="chart-img-container">
+                    <img src="Graphs/Rplot - MethAnnualGrowth.png" alt="Growth Graph">
+                </div>
+                <div class="icon-container">
+                    <div class="icon-text">
+                    <span class="sys-value">01 - Phishing <br> 02 - Man-in-the-Middle <br> 03 - Ransomware </span>
+                    </div>
+                    <a href="#expl-growth">
+                        <img src="Icons/up-arrow.png" class="pixel-icon" alt="Arrow Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="card-label">>> AVG_ANNUAL_GROWTH</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="explanations-container">
+    
+    <div class="explanation-row" id="expl-users">
+        <div class="expl-icon-box">
+            <a href="#chart-users">
+                <img src="Icons/person.png" class="pixel-icon" alt="Person Icon">
+            </a>
+        </div>
+        <div class="expl-text-box">
+            <h3 class="expl-title">>> AVG_AFFECTED_USERS</h3>
+            <p> Man-in-the-Middle crowns himself as the most pervasive cyberattack. With its ability to rapidly and sneakily intercept flows of data, this result is reasonable. SQL Injection and Malware follow. </p>
+        </div>
+    </div>
+
+    <div class="explanation-row" id="expl-money">
+        <div class="expl-icon-box">
+            <a href="#chart-money">
+                <img src="Icons/money-bag (2).png" class="pixel-icon" alt="Money Icon">
+            </a>
+        </div>
+        <div class="expl-text-box">
+            <h3 class="expl-title">>> AVG_FINANCIAL_LOSS</h3>
+            <p> DDoS wins the "Stealer" award. Being an attack able to completely shut down entire systems it is no surprise to see it dominate this category. Man-in-the-middle reconfirms its danger getting second place, Phishing follows.</p>
+        </div>
+    </div>
+
+    <div class="explanation-row" id="expl-time">
+        <div class="expl-icon-box">
+            <a href="#chart-time">
+                <img src="Icons/clock.png" class="pixel-icon" alt="Time Icon">
+            </a>
+        </div>
+        <div class="expl-text-box">
+            <h3 class="expl-title">>> AVG_RESOLUTION_HOURS</h3>
+            <p> It is now Malware's turn to lead a category. Probably due to its ever-changing nature and multiple forms, the time required to fix a Malware induced attack is relatively higher. SQL Injection follows second, while Man-in-the-Midle makes another appearance.</p>
+        </div>
+    </div>
+
+    <div class="explanation-row" id="expl-count">
+        <div class="expl-icon-box">
+            <a href="#chart-count">
+                <img src="Icons/alien-space-character-of-pixels-for-a-game.png" class="pixel-icon" alt="Alien Icon">
+            </a>
+        </div>
+        <div class="expl-text-box">
+            <h3 class="expl-title">>> ATTACK_COUNT</h3>
+            <p> There is not much to say here, DDoS is the most used attack among the ones reported. Phishing and SQL Injection are closely behind.</p>
+        </div>
+    </div>
+
+    <div class="explanation-row" id="expl-growth">
+        <div class="expl-icon-box">
+            <a href="#chart-growth">
+                <img src="Icons/up-arrow.png" class="pixel-icon" alt="Arrow Icon">
+            </a>
+        </div>
+        <div class="expl-text-box">
+            <h3 class="expl-title">>> AVG_ANNUAL_GROWTH</h3>
+            <p> Phishing wins this last category winning the "Rookie" award. Its growth may probably be due to the emergence of AI tools able to imitate almost perfectly human interactions, that is what Phishing is based on. Man-in-the-Middle and Ransomware are largely left behind.</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="arcade-cabinet">
+    <div class="arcade-screen">
+        <h2 class="arcade-title">HIGH SCORES</h2>
+        
+        <div class="leaderboard-grid">
+            <div class="grid-header">RANK</div>
+            <div class="grid-header">NAME</div>
+            <div class="grid-header">SCORE</div>
+            
+            <div class="grid-cell rank-1">1ST</div>
+            <div class="grid-cell rank-1">MIM</div>
+            <div class="grid-cell rank-1">08 PTS</div>
+            
+            <div class="grid-cell rank-2">2ND</div>
+            <div class="grid-cell rank-2">DDS</div>
+            <div class="grid-cell rank-2">06 PTS</div>
+            
+            <div class="grid-cell rank-3">2ND</div>
+            <div class="grid-cell rank-3">PHS</div>
+            <div class="grid-cell rank-3">06 PTS</div>
+
+            <div class="grid-cell">3RD</div>
+            <div class="grid-cell">SQL</div>
+            <div class="grid-cell">05 PTS</div>
+            
+            <div class="grid-cell">4TH</div>
+            <div class="grid-cell">MLW</div>
+            <div class="grid-cell">04 PTS</div>
+
+            <div class="grid-cell">5TH</div>
+            <div class="grid-cell">RMW</div>
+            <div class="grid-cell">03 PTS</div>
+        </div>
+        
+        <div class="insert-coin">INSERT TARGET TO CONTINUE ATTACKING_</div>
+    </div>
+</div>
+
+<div class="top">
+        <p class="typewriter"> Man-in-the-Middle sets the best score and is crowned <span id="evidenzia"> BEST CYBERATTACK</span>!<br>
+        This also wraps the analysis up, thank you for your patience and remember, <br><br>
+    Be careful, protect yourself and please, change your passwords.</p>
+    </div>
+
+</div>
+
+<div class="menu-container">
+    <a href="PaginaDH.html" class="box">HOME</a>
+    
+    <a href="Dataset.html" class="box">DATASET</a>
+    
+    <a href="About.html" class="box">ABOUT</a>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        
+        if (n > slides.length) {slideIndex = 1}    
+        
+        if (n < 1) {slideIndex = slides.length}
+        
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active-slide");
+        }
+        
+        slides[slideIndex-1].classList.add("active-slide");
+    }
+</script>
+
+<script>
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+        
+            if(this.hostname === window.location.hostname && this.getAttribute('href').charAt(0) !== '#') {
+                e.preventDefault();
+                const destinazione = this.href;
+
+                
+                document.body.classList.add('system-failure');
+
+                
+                setTimeout(() => {
+                    window.location.href = destinazione;
+                }, 800);
+            }
+        });
+    });
+</script>
+</body>
+</html>

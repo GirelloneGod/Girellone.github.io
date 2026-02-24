@@ -1,0 +1,70 @@
+<!DOCTYPE html>​
+<html>​
+
+<head>​
+    <link rel="stylesheet" href="Stile.css">
+</head>​
+
+<body>​
+<h1>
+    <a href="PaginaDH.html" class="title-link">
+    CYBERSTRIKES<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+    </a>
+</h1>
+
+<div class="menu-container">
+    <a href="DiveIn.html" class="box">DIVE IN</a>
+    
+    <a href="Dataset.html" class="box">DATASET</a>
+    
+    <a href="About.html" class="box">ABOUT</a>
+</div>
+
+<div class="top">
+    <p class="typewriter"> Since the digital age began, <span id="evidenzia">cyberstrikes</span> started to arise. <br>
+     Consoles, personal computers, servers, everything that was part of the newborn world wide web became a potential target. <br>
+     A new kind of character emerged: <span id="evidenzia">the hacker</span>. <br>
+     Both a  criminal and an avenger, a villain and a hero. Everything at the same time. <br>
+     Mulitple billions stolen, governments blackmailed, secrets unveiled. All of this due to lines and lines of code. </p>
+</div>
+
+<div class="margin">
+    <p class="typewriter"> What if we could, in some way, <span id="evidenzia">visualize</span> what is really happening? <br>
+     Luckily for us, we can. (As it is the reason behind this site's own existence). <br>
+     In the <a href="DiveIn.html" id="evidenzia"> DIVE IN</a> section you'll find the "core" of cyberstrikes, both a visual and narrative presentation of a dataset regarding <br> 
+     the global cybersecurity threats spanning from 2015 up to 2024.</p>
+</div>
+
+<div class="margin">
+    <p class="typewriter"> You can also find two more sections. The first one, <a href="Dataset.html" id="evidenzia"> DATASET</a>, includes a complete explanation <br>
+     of the dataset, its variables, how it was created and why it was chosen. <br>
+     The second one, <a href="About.html" id="evidenzia"> ABOUT</a>, is where all the additional information is stored.</p>
+</div>
+
+<div class="margin">
+    <p class="typewriter"> With all this said, <span id="evidenzia"> CYBERSTRIKES</span> is yours to explore.</p>
+</div>
+
+<script>
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+        
+            if(this.hostname === window.location.hostname && this.getAttribute('href').charAt(0) !== '#') {
+                e.preventDefault();
+                const destinazione = this.href;
+
+                
+                document.body.classList.add('system-failure');
+
+                
+                setTimeout(() => {
+                    window.location.href = destinazione;
+                }, 800);
+            }
+        });
+    });
+</script>
+</body>
+</html>

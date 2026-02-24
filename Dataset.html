@@ -1,0 +1,132 @@
+<!DOCTYPE html>​
+<html>
+
+<head>​
+    <link rel="stylesheet" href="Stile.css">
+</head>​
+
+<body>​
+<h1>
+    <a href="PaginaDH.html" class="title-link">
+    CYBERSTRIKES<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+    </a>
+</h1>
+
+<div class="menu-container">
+    <a href="DiveIn.html" class="box">DIVE IN</a>
+    
+    <a href="PaginaDH.html" class="box">HOME</a>
+    
+    <a href="About.html" class="box">ABOUT</a>
+</div>
+
+<div class="top">
+    <p class="typewriter"> The dataset <span id="evidenzia"> "Global Cybersecurity Threats (2015-2024)"</span> was originally
+        found on Kaggle, an online platform for data scientists where dataset are shared and debated. <br>
+        It was published by Atharva Soundankar under a CC0: Public Domain license. 
+        The link to the dataset can be found <a href="https://www.kaggle.com/datasets/atharvasoundankar/global-cybersecurity-threats-2015-2024" id="evidenzia"> here</a>. <br>
+        It is essential to note that the dataset was <span id="evidenzia"> synthetically generated </span> using structures and patterns inspired by real-word sources. <br>
+        Therefore, all the hypothesis, opinions and ideas are not based on real world events. <br>
+        As it is stated by the author, the dataset structures and feature logic were <span id="evidenzia"> inspired by</span>: 
+    </p>
+</div>
+
+<div style="margin-top: 15px; margin-bottom: 15px;">
+    <p class="typewriter"> Verizon Data Breach Investigations Report (DBIR) - ENISA Threat Landscape Reports - MITRE ATT&CK Framework - <br>
+        Public whitepapers from vendors such as Symantec, CrowdStrike, and FireEye - CERT advisories and national cybersecurity archives</p>
+</div>
+
+<div class="top">
+    <p class="typewriter"> It did not require any additional modification or manipulation, as there were no absent data. <br>
+        The dataset should provide dense information on cyberattacks, its different typologies, the industries targeted and many more variables. <br>
+        All of the present variables will now be briefly explained. </p>
+</div>
+
+<div class="glossary-grid">
+    
+    <div class="word-item">
+        COUNTRY
+        <span class="popup"> The country in which the attack occurred. <br>
+        Those are: Australia, Brazil, China, France, Germany, India, Japan, Russia, UK and USA.</span>
+    </div>
+
+    <div class="word-item">
+        YEAR
+        <span class="popup"> The year in which the attack occurred, ranging from 2015 up to 2024.</span>
+    </div>
+
+    <div class="word-item">
+        ATTACK TYPE
+        <span class="popup"> What method of attack was used. 
+        Those can be: DDoS, Malware, Man-in-the-Middle, Phishing, Ransomware, SQL Injection.</span>
+    </div>
+
+    <div class="word-item">
+        TARGET INDUSTRY
+        <span class="popup">The industry the attack was directed to. 
+        Those are: Banking, Education, Government, Healthcare, IT, Retail and Telecommunications.</span>
+    </div>
+
+    <div class="word-item">
+        FINANCIAL LOSS
+        <span class="popup"> The estimated financial loss in millions. 
+            In can range between 0.5 and 100 millions.</span>
+    </div>
+
+    <div class="word-item">
+        AFFECTED USERS
+        <span class="popup"> The number of affected users. From 424 up to 1 million.</span>
+    </div>
+
+    <div class="word-item">
+        ATTACK SOURCE
+        <span class="popup"> The origin of the attack. It can be: Hacker group,
+            Insider, Nation-state and Unknown. 
+        </span>
+    </div>
+
+    <div class="word-item">
+        SECURITY VULNERABILITY
+        <span class="popup"> The vunlerability of the system exploited.
+            It can be: Social Engineering, Unpatched Software, Weak Passwords, Zero-day.
+        </span>
+    </div>
+
+    <div class="word-item">
+        DEFENSE MECHANISM
+        <span class="popup"> The cyberdefense strategy applied against the attack.
+            Those are: AI-based Detection, Antivirus, Encryption, Firewall and VPN.
+        </span>
+    </div>
+
+    <div class="word-item">
+        RESOLUTION TIME
+        <span class="popup"> The time, expressed in hours, it took to solve the problem. 
+            It can range from 1 up to 72 hours. </span>
+    </div>
+
+</div>
+
+<script>
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+        
+            if(this.hostname === window.location.hostname && this.getAttribute('href').charAt(0) !== '#') {
+                e.preventDefault();
+                const destinazione = this.href;
+
+                
+                document.body.classList.add('system-failure');
+
+                
+                setTimeout(() => {
+                    window.location.href = destinazione;
+                }, 800);
+            }
+        });
+    });
+</script>
+</body>
+</html>
